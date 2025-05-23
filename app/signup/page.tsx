@@ -5,14 +5,10 @@ export default function SignupPage() {
     <main className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-background p-4">
       <div className="w-full max-w-md">
         <SignupForm />
-        <div className="mt-6 text-center text-xs text-muted-foreground">
-          <p>Bolt rights reserved</p>
-          <p className="mt-1">
-            <a href="#" className="hover:underline">
-              Privacy policy
-            </a>
-          </p>
-        </div>
+        <div className="flex justify-between items-center text-xs text-gray-500 px-4 py-4 bg-gray-100">
+  <p>© all rights reserved</p>
+  <a href="#" className="hover:underline">Privacy policy</a>
+</div>
       </div>
     </main>
   );

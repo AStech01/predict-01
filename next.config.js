@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // From first config
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // From second config
   },
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true, // From second config
+  },
 };
 
 module.exports = nextConfig;

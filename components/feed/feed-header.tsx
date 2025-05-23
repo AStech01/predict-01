@@ -66,7 +66,7 @@ export function FeedHeader() {
           <Button
             variant="default"
             size="sm"
-            className="gap-3 bg-[#f5f5f5] hover:bg-white"
+            className="gap-3 bg-[#f5f5f5] hover:bg-white border"
             onClick={() => router.push('/create')}
           >
             <SquarePlus className="h-4 w-4 text-black" />

@@ -60,7 +60,7 @@ export function PredictionCard({ prediction, detailed = false }: PredictionCardP
         </Avatar>
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between">
-            <p className="font-medium text-sm">{prediction.author.name}</p>
+            <p className="font-medium text-sm dark:text-black" >{prediction.author.name}</p>
             <Badge variant="outline" className={cn('text-xs', getBadgeColor(prediction.category))}>
               {prediction.category}
             </Badge>
@@ -72,7 +72,7 @@ export function PredictionCard({ prediction, detailed = false }: PredictionCardP
       </div>
 
       <div className="mt-3">
-        <h3 className="font-semibold ">{prediction.title}</h3>
+        <h3 className="font-semibold dark:text-black">{prediction.title}</h3>
         <p className="mt-1 text-muted-foreground text-sm">
           {detailed ? prediction.description : prediction.description.slice(0, 100) + '...'}
         </p>
@@ -104,12 +104,12 @@ export function PredictionCard({ prediction, detailed = false }: PredictionCardP
   );
 
   if (detailed) {
-    return <div className="p-4 bg-white dark:bg-card rounded-lg shadow-sm">{CardContent}</div>;
+    return <div className="p-4 bg-white dark:bg-white rounded-lg shadow-sm">{CardContent}</div>;
   }
 
   return (
     <Link href={`/prediction/${prediction.id}`} className="block">
-      <div className="p-4 bg-white dark:bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow">
+      <div className="p-4 bg-white dark:bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
         {CardContent}
       </div>
     </Link>

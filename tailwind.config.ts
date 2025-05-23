@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
        fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
         handwriting: ['var(--font-handwriting)', 'cursive'],
@@ -29,6 +30,7 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
+          
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',

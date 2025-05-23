@@ -16,10 +16,10 @@ export default function Navigation() {
           href="feed"
           onClick={() => setActiveTab("home")}
           className={cn(
-            "flex items-center pb-2 text-sm font-medium transition-colors",
+            "flex items-center pb-2 text-sm font-medium transition-colors dark:text-white",
             activeTab === "home" 
-              ? "text-black border-b-2 border-white" 
-              : "text-gray-400 "
+              ? "text-black border-b-2 border-black dark:border-white" 
+              : "text-gray-400  "
           )}
         >
           <Globe  className="mr-2 h-4 w-4" />

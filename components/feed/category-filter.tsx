@@ -41,7 +41,7 @@ export function CategoryFilter({ onSelectCategory, selectedCategory }: CategoryF
           key={category}
           variant={selectedCategory === category ? 'default' : 'outline'}
           className={cn(
-            'cursor-pointer transition-all px-3 py-1 bg-[#e8e8e8] rounded-lg border-none ',
+            'cursor-pointer transition-all px-4 py-1 bg-[#e8e8e8] rounded-lg border-none text-sm',
             getBadgeColor(category, selectedCategory === category)
           )}
           onClick={() => onSelectCategory(category)}

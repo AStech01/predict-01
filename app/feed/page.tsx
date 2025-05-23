@@ -21,10 +21,13 @@ export default function FeedPage() {
           <div className='mb-10'>
    <TopBanner/>
           </div>
-        <Navigation/>
+          <div className=''>
+          <Navigation/>
+          </div>
+       
          
           
-          <div className="mb-4">
+          <div className="mb-4 mt-7">
             <CategoryFilter 
               selectedCategory={selectedCategory} 
               onSelectCategory={setSelectedCategory} 

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { LightbulbIcon, Camera } from 'lucide-react';
+import { LightbulbIcon, Camera, CircleCheck } from 'lucide-react';
 import Image from 'next/image';
 
 export function ProfileSetupForm() {
@@ -55,7 +55,7 @@ export function ProfileSetupForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="name">Your Name</Label>
+          {/* <Label htmlFor="name">Your Name</Label> */}
           <Input
             id="name"
             type="text"
@@ -66,7 +66,8 @@ export function ProfileSetupForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full" disabled={!name.trim()}>
+        <Button type="submit" className="w-full text-black bg-[#747474] cursor-pointer hover:bg-none" disabled={!name.trim()}>
+            <CircleCheck  className="h-4 w-4 text-black  mr-2" />
           Continue
         </Button>
       </form>

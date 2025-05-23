@@ -142,13 +142,13 @@ export function PredictionForm() {
     console.log('Creating prediction:', { title, description, category, date });
     
     // In a real app, you would create the prediction in the database
-    router.push('/feed');
+    router.push('/yourprediction');
     
   };
 
   return (
     <div className="max-w-lg mx-auto ">
-      <div className="flex items-center mb-6">
+      <div className="flex items-center mb-6 -ml-3">
         <Button
           variant="ghost"
           size="icon"
@@ -239,7 +239,7 @@ export function PredictionForm() {
     type="submit"
     className="bg-black  sm:w-40 w-full rounded-lg hover:bg-black text-white flex items-center space-x-2"
     disabled={!title || !category || !date || !description}
-     onClick={() => router.push('/prediction')}
+     onClick={() => router.push('/yourprediction')}
   >
     <Eye className="h-4 w-4" />
     <span className='text-white'>Post Prediction</span>

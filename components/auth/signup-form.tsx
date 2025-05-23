@@ -70,7 +70,7 @@ export function SignupForm() {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
+          {/* <Label htmlFor="email">Email</Label> */}
           <Input
             id="email"
             type="email"
@@ -82,7 +82,7 @@ export function SignupForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="password">Password</Label>
+          {/* <Label htmlFor="password">Password</Label> */}
           <div className="relative">
             <Input
               id="password"
@@ -108,7 +108,7 @@ export function SignupForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="confirmPassword">Confirm Password</Label>
+          {/* <Label htmlFor="confirmPassword">Confirm Password</Label> */}
           <div className="relative">
             <Input
               id="confirmPassword"
@@ -133,13 +133,13 @@ export function SignupForm() {
           </div>
         </div>
 
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full rounded-full bg-[#747474]">
           Continue
         </Button>
 
         <p className="text-center text-sm">
           Already have an account?{' '}
-          <Link href="/login" className="text-primary hover:underline">
+          <Link href="/login" className="text-primary hover:underline font-bold">
             Sign In
           </Link>
         </p>
